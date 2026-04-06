@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include 'partials/head.html' %}
+</head>
+<body>
+{% include 'partials/navbar.html' %}
+    <header class="about-hero about-hero-image" style="min-height: 50vh;">
+        <div class="about-hero-bg-image" style="background-image: url('{{ img_base }}/render.png');"></div>
+        <div class="about-hero-overlay"></div>
+        <div class="about-hero-content">
+            <nav class="about-breadcrumb"><a href="index.html">Home</a> / <a href="collection-domestic.html">Domestic Collection</a> / <a href="collection-domestic-{{ series_key }}.html">{{ series_name }}</a> / <span>{{ product.name }}</span></nav>
+            <h1>{{ product.name }}</h1>
+            <p class="about-hero-subtitle">{{ series_name }}</p>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="collection-product-section">
+            <div class="container">
+                <div class="product-page-header animate-on-scroll"><h2>{{ product.name }}</h2></div>
+                <div class="product-slab-content animate-on-scroll">
+                    <div class="product-slab-image">
+{% if product.slab_images|length == 1 %}
+                        <img src="{{ img_base }}/{{ product.slab_images[0] }}" class="d-block w-100" alt="{{ product.name }} slab" fetchpriority="high">
+{% else %}
+                        <div id="carouselSlab{{ carousel_id }}" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" aria-label="{{ product.name }} slab views">
+                            <div class="carousel-indicators">
+{% for img in product.slab_images %}
+                                <button type="button" data-bs-target="#carouselSlab{{ carousel_id }}" data-bs-slide-to="{{ loop.index0 }}"{% if loop.first %} class="active" aria-current="true" aria-label="Full slab"{% else %} aria-label="Slab view {{ loop.index }}"{% endif %}></button>
+{% endfor %}
+                            </div>
+                            <div class="carousel-inner">
+{% for img in product.slab_images %}
+                                <div class="carousel-item{% if loop.first %} active{% endif %}">
+                                    <img src="{{ img_base }}/{{ img }}" class="d-block w-100" alt="{{ product.name }} slab{% if not loop.first %} view {{ loop.index }}{% endif %}" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
+                                </div>
+{% endfor %}
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlab{{ carousel_id }}" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous slab image</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselSlab{{ carousel_id }}" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next slab image</span>
+                            </button>
+                        </div>
+{% endif %}
+                    </div>
+                    <div class="product-content">
+                        <h2>About This Design</h2>
+                        <dl class="product-facts">
+                            <div class="product-fact">
+                                <dt>Description</dt>
+                                <dd class="product-description">
+                                    <p>{{ product.description }}</p>
+                                </dd>
+                            </div>
+                            <div class="product-fact">
+                                <dt>Thickness</dt>
+                                <dd>{{ product.thickness }}</dd>
+                            </div>
+                            <div class="product-fact">
+                                <dt>Size</dt>
+                                <dd>{{ product.size }}</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <h3 class="product-renders-heading animate-on-scroll">Renders</h3>
+                <div class="product-renders">
+{% for img in product.render_images %}
+                    <div class="product-render-item animate-on-scroll"><img src="{{ img_base }}/{{ img }}" alt="{{ product.name }} render {{ loop.index }}" width="600" height="450" loading="lazy"></div>
+{% endfor %}
+                </div>
+                <div class="collection-brochure-cta collection-brochure-cta--embed" role="region" aria-label="Collection brochures">
+                    <div class="collection-brochure-cta-inner animate-on-scroll">
+                        <h2 class="collection-brochure-cta-title">Brochures</h2>
+                        <p class="collection-brochure-cta-lead">Download our collection brochures for offline reference.</p>
+                        <div class="collection-brochure-links">
+                            <a href="files/brochures/glowstone-domestic-collection.pdf" class="collection-brochure-link" download>Download Domestic Collection Brochure</a>
+                            <a href="files/brochures/glowstone-international-collection.pdf" class="collection-brochure-link" download>Download International Collection Brochure</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-cta-section"><a href="contact.html" class="btn-hero" style="display: inline-block; padding: 1rem 2.5rem; background: transparent; color: var(--navbar-accent); border: 2px solid var(--navbar-accent); text-decoration: none; font-weight: 600;">Request Sample</a></div>
+            </div>
+        </section>
+    </main>
+
+
+{% include 'partials/footer.html' %}
+</body>
+</html>

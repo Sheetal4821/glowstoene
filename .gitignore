@@ -22,3 +22,5 @@ video/
 
 # Local S3 deploy bundle (large; regenerate with your sync script)
 s3-upload/
+__pycache__/
+admin/data/password_hash.txt

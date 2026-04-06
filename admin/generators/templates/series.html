@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include 'partials/head.html' %}
+</head>
+<body>
+{% include 'partials/navbar.html' %}
+    <header class="about-hero about-hero-image">
+        <div class="about-hero-bg-image" style="background-image: url('{{ series.hero_image }}');"></div>
+        <div class="about-hero-overlay"></div>
+        <div class="about-hero-content">
+            <nav class="about-breadcrumb"><a href="index.html">Home</a> / <a href="collection-domestic.html">Domestic Collection</a> / <span>{{ series.name }}</span></nav>
+            <h1>{{ series.name }}</h1>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="collection-series-section">
+            <div class="container">
+                <div class="series-page-header animate-on-scroll">
+                    <h2>{{ series.name }}</h2>
+                </div>
+                <div class="series-intro animate-on-scroll">
+                    <p>{{ series.description }}</p>
+                </div>
+                <div class="products-grid">
+{% for product in sorted_products %}
+                    <article class="product-card animate-on-scroll">
+                        <a href="{{ product.href }}" class="product-card-link">
+                            <img src="{{ product.card_image }}" alt="{{ product.name }}" class="product-card-image" width="400" height="300" loading="lazy">
+                            <div class="product-card-info">
+                                <h3 class="product-card-title">{{ product.name }}</h3>
+                                <span class="product-card-cta">View Details →</span>
+                            </div>
+                        </a>
+                    </article>
+{% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="collection-brochure-cta" aria-label="Collection brochures">
+            <div class="container">
+                <div class="collection-brochure-cta-inner animate-on-scroll">
+                    <h2 class="collection-brochure-cta-title">Brochures</h2>
+                    <p class="collection-brochure-cta-lead">Download our collection brochures for offline reference.</p>
+                    <div class="collection-brochure-links">
+                        <a href="files/brochures/glowstone-domestic-collection.pdf" class="collection-brochure-link" download>Download Domestic Collection Brochure</a>
+                        <a href="files/brochures/glowstone-international-collection.pdf" class="collection-brochure-link" download>Download International Collection Brochure</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-cta">
+            <div class="container">
+                <div class="about-cta-content animate-on-scroll">
+                    <h2>Interested in this series?</h2>
+                    <p>Contact us for samples, pricing, or more information.</p>
+                    <a href="contact.html" class="btn-hero">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+{% include 'partials/footer.html' %}
+</body>
+</html>

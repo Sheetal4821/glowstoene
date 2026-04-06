@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glowstone Admin Panel</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+:root{--bg:#0f0f0f;--bg2:#1a1a1a;--bg3:#242424;--text:#e8e4df;--text2:#a09a90;--gold:#c9a962;--green:#3aaa8c;--danger:#e74c3c;--radius:8px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+a{color:var(--gold);text-decoration:none}
+a:hover{color:#dbb970}
+
+/* Login */
+.login-wrap{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:1rem}
+.login-card{background:var(--bg2);border:1px solid rgba(201,169,98,.15);border-radius:var(--radius);padding:2.5rem;max-width:400px;width:100%;text-align:center}
+.login-card h1{font-size:1.5rem;color:var(--gold);margin-bottom:.5rem}
+.login-card p{color:var(--text2);font-size:.875rem;margin-bottom:1.5rem}
+.login-card input{width:100%;padding:.75rem 1rem;background:var(--bg3);border:1px solid rgba(201,169,98,.2);border-radius:var(--radius);color:var(--text);font-size:1rem;margin-bottom:1rem}
+.login-card input:focus{outline:none;border-color:var(--gold)}
+.login-card button{width:100%;padding:.75rem;background:var(--gold);color:#0f0f0f;border:none;border-radius:var(--radius);font-weight:600;font-size:1rem;cursor:pointer}
+.login-card button:hover{background:#dbb970}
+
+/* Layout */
+.admin-layout{display:flex;min-height:100vh}
+.sidebar{width:240px;background:var(--bg2);border-right:1px solid rgba(201,169,98,.1);padding:1.5rem 0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100}
+.sidebar-brand{padding:0 1.25rem 1.5rem;border-bottom:1px solid rgba(201,169,98,.1);margin-bottom:1rem}
+.sidebar-brand h2{font-size:1.1rem;color:var(--gold);font-weight:600}
+.sidebar-brand small{color:var(--text2);font-size:.75rem}
+.sidebar-nav{list-style:none;padding:0}
+.sidebar-nav li a{display:block;padding:.75rem 1.25rem;color:var(--text);font-size:.9rem;transition:all .2s}
+.sidebar-nav li a:hover,.sidebar-nav li a.active{background:rgba(201,169,98,.1);color:var(--gold)}
+.sidebar-nav li a.active{border-right:3px solid var(--gold)}
+.main-content{flex:1;margin-left:240px;padding:2rem}
+
+/* Cards */
+.stat-card{background:var(--bg2);border:1px solid rgba(201,169,98,.1);border-radius:var(--radius);padding:1.5rem;text-align:center}
+.stat-card .num{font-size:2rem;font-weight:700;color:var(--gold)}
+.stat-card .label{color:var(--text2);font-size:.85rem;margin-top:.25rem}
+
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.25rem;margin-top:1.5rem}
+.item-card{background:var(--bg2);border:1px solid rgba(201,169,98,.1);border-radius:var(--radius);overflow:hidden;transition:border-color .2s;cursor:pointer}
+.item-card:hover{border-color:var(--gold)}
+.item-card img{width:100%;height:180px;object-fit:cover;display:block}
+.item-card .info{padding:1rem}
+.item-card .info h3{font-size:1rem;margin-bottom:.25rem}
+.item-card .info small{color:var(--text2);font-size:.8rem}
+
+/* Buttons */
+.btn-gold{background:var(--gold);color:#0f0f0f;border:none;padding:.5rem 1.25rem;border-radius:var(--radius);font-weight:600;cursor:pointer;font-size:.875rem}
+.btn-gold:hover{background:#dbb970;color:#0f0f0f}
+.btn-outline{background:transparent;color:var(--gold);border:1px solid var(--gold);padding:.5rem 1.25rem;border-radius:var(--radius);cursor:pointer;font-size:.875rem}
+.btn-outline:hover{background:rgba(201,169,98,.1)}
+.btn-danger{background:var(--danger);color:#fff;border:none;padding:.5rem 1rem;border-radius:var(--radius);cursor:pointer;font-size:.8rem}
+.btn-danger:hover{background:#c0392b}
+.btn-sm{padding:.35rem .75rem;font-size:.8rem}
+
+/* Forms */
+.form-group{margin-bottom:1.25rem}
+.form-group label{display:block;font-size:.85rem;color:var(--text2);margin-bottom:.35rem;font-weight:500}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:.6rem .85rem;background:var(--bg3);border:1px solid rgba(201,169,98,.15);border-radius:var(--radius);color:var(--text);font-size:.9rem}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--gold)}
+.form-group textarea{resize:vertical;min-height:80px}
+
+/* Image grid */
+.img-grid{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}
+.img-thumb{position:relative;width:120px;height:90px;border-radius:6px;overflow:hidden;border:1px solid rgba(201,169,98,.15)}
+.img-thumb img{width:100%;height:100%;object-fit:cover}
+.img-thumb .del-btn{position:absolute;top:4px;right:4px;width:22px;height:22px;border-radius:50%;background:rgba(231,76,60,.9);color:#fff;border:none;font-size:.7rem;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1}
+.drop-zone{width:120px;height:90px;border:2px dashed rgba(201,169,98,.3);border-radius:6px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text2);font-size:1.5rem;transition:border-color .2s}
+.drop-zone:hover,.drop-zone.dragover{border-color:var(--gold);color:var(--gold)}
+.drop-zone input{display:none}
+
+/* Breadcrumb */
+.breadcrumb-nav{font-size:.85rem;color:var(--text2);margin-bottom:1.5rem}
+.breadcrumb-nav a{color:var(--gold)}
+.breadcrumb-nav span{color:var(--text2);margin:0 .35rem}
+
+/* Section header */
+.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem}
+.section-head h2{font-size:1.3rem;font-weight:600}
+
+/* Toast */
+.toast-wrap{position:fixed;top:1rem;right:1rem;z-index:9999}
+
+/* Log */
+.log-output{background:var(--bg3);border:1px solid rgba(201,169,98,.1);border-radius:var(--radius);padding:1rem;font-family:monospace;font-size:.8rem;max-height:400px;overflow-y:auto;white-space:pre-wrap;color:var(--green)}
+
+/* Modal */
+.modal-content{background:var(--bg2);color:var(--text);border:1px solid rgba(201,169,98,.15)}
+.modal-header{border-bottom:1px solid rgba(201,169,98,.1)}
+.modal-footer{border-top:1px solid rgba(201,169,98,.1)}
+.btn-close{filter:invert(1)}
+
+/* Responsive */
+@media(max-width:768px){
+    .sidebar{position:fixed;transform:translateX(-100%);transition:transform .3s;width:260px}
+    .sidebar.open{transform:translateX(0)}
+    .main-content{margin-left:0;padding:1rem}
+    .mobile-toggle{display:block!important}
+}
+.mobile-toggle{display:none;position:fixed;top:1rem;left:1rem;z-index:200;background:var(--bg2);border:1px solid rgba(201,169,98,.2);color:var(--gold);padding:.5rem .75rem;border-radius:var(--radius);cursor:pointer;font-size:1.2rem}
+</style>
+</head>
+<body>
+
+<!-- Login Screen -->
+<div id="loginScreen" class="login-wrap">
+    <div class="login-card">
+        <h1>Glowstone</h1>
+        <p>Admin Panel</p>
+        <div id="loginMsg" style="color:var(--danger);font-size:.85rem;margin-bottom:.75rem;display:none"></div>
+        <input type="password" id="loginPassword" placeholder="Enter admin password" autofocus>
+        <button onclick="doLogin()">Login</button>
+        <p style="margin-top:1rem;font-size:.75rem;color:var(--text2)" id="loginHint"></p>
+    </div>
+</div>
+
+<!-- Main Panel -->
+<div id="mainPanel" style="display:none">
+    <button class="mobile-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">&#9776;</button>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2>Glowstone</h2>
+                <small>Admin Panel</small>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="#" onclick="showDashboard()" data-view="dashboard" class="active">Dashboard</a></li>
+                <li><a href="#" onclick="showSeries()" data-view="series">Series</a></li>
+                <li><a href="#" onclick="showRegenerate()" data-view="regenerate">Regenerate</a></li>
+                <li><a href="#" onclick="doLogout()" style="color:var(--danger)">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content" id="contentArea"></main>
+    </div>
+</div>
+
+<!-- Toast container -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+<!-- Series Edit Modal -->
+<div class="modal fade" id="seriesModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title" id="seriesModalTitle">Edit Series</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">
+        <div class="form-group"><label>Series Key (slug)</label><input id="smKey" readonly></div>
+        <div class="form-group"><label>Series Name</label><input id="smName"></div>
+        <div class="form-group"><label>Description</label><textarea id="smDesc" rows="4"></textarea></div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn-outline" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn-gold" onclick="saveSeries()">Save</button>
+    </div>
+</div></div></div>
+
+<!-- New Series Modal -->
+<div class="modal fade" id="newSeriesModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Add New Series</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">
+        <div class="form-group"><label>Series Name</label><input id="nsName" placeholder="e.g. Marble Series"></div>
+        <div class="form-group"><label>Series Key (slug)</label><input id="nsKey" placeholder="auto-generated"></div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn-outline" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn-gold" onclick="createNewSeries()">Create</button>
+    </div>
+</div></div></div>
+
+<!-- New Product Modal -->
+<div class="modal fade" id="newProductModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Add New Product</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">
+        <div class="form-group"><label>Product Name</label><input id="npName" placeholder="e.g. Sahara Gold"></div>
+        <p style="font-size:.8rem;color:var(--text2)">Slug: <span id="npSlug">-</span></p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn-outline" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn-gold" onclick="createNewProduct()">Create</button>
+    </div>
+</div></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+/* ========== State ========== */
+let catalog = null;
+let currentView = 'dashboard';
+let currentSeriesKey = null;
+let currentProductSlug = null;
+
+/* ========== API helpers ========== */
+async function api(method, path, body) {
+    const opts = { method, headers: {}, credentials: 'same-origin' };
+    if (body && !(body instanceof FormData)) {
+        opts.headers['Content-Type'] = 'application/json';
+        opts.body = JSON.stringify(body);
+    } else if (body instanceof FormData) {
+        opts.body = body;
+    }
+    const res = await fetch(path, opts);
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Request failed');
+    return data;
+}
+
+/* ========== Toast ========== */
+function toast(msg, type='success') {
+    const wrap = document.getElementById('toastWrap');
+    const bg = type === 'success' ? 'var(--green)' : type === 'error' ? 'var(--danger)' : 'var(--gold)';
+    const el = document.createElement('div');
+    el.className = 'toast show';
+    el.setAttribute('role','alert');
+    el.innerHTML = `<div style="background:${bg};color:#fff;padding:.75rem 1.25rem;border-radius:var(--radius);margin-bottom:.5rem;font-size:.875rem;box-shadow:0 4px 12px rgba(0,0,0,.3)">${msg}</div>`;
+    wrap.appendChild(el);
+    setTimeout(() => el.remove(), 3500);
+}
+
+/* ========== Auth ========== */
+async function doLogin() {
+    const pw = document.getElementById('loginPassword').value;
+    const msg = document.getElementById('loginMsg');
+    try {
+        await api('POST', '/admin/login', { password: pw });
+        document.getElementById('loginScreen').style.display = 'none';
+        document.getElementById('mainPanel').style.display = 'block';
+        await loadCatalog();
+        showDashboard();
+    } catch (e) {
+        msg.textContent = e.message;
+        msg.style.display = 'block';
+    }
+}
+
+async function doLogout() {
+    await api('POST', '/admin/logout', {});
+    location.reload();
+}
+
+document.getElementById('loginPassword').addEventListener('keydown', e => {
+    if (e.key === 'Enter') doLogin();
+});
+
+/* ========== Load catalog ========== */
+async function loadCatalog() {
+    catalog = await api('GET', '/admin/api/catalog');
+}
+
+/* ========== Navigation ========== */
+function setActiveNav(view) {
+    document.querySelectorAll('.sidebar-nav a').forEach(a => {
+        a.classList.toggle('active', a.dataset.view === view);
+    });
+}
+
+function slugify(text) {
+    return text.trim().toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/[\s_]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
+
+/* ========== Dashboard ========== */
+function showDashboard() {
+    currentView = 'dashboard';
+    setActiveNav('dashboard');
+    const series = catalog.series;
+    const seriesCount = Object.keys(series).length;
+    let productCount = 0;
+    for (const s of Object.values(series)) productCount += Object.keys(s.products).length;
+
+    document.getElementById('contentArea').innerHTML = `
+        <h2 style="margin-bottom:1.5rem">Dashboard</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem">
+            <div class="stat-card"><div class="num">${seriesCount}</div><div class="label">Series</div></div>
+            <div class="stat-card"><div class="num">${productCount}</div><div class="label">Products</div></div>
+        </div>
+        <div style="margin-top:2rem">
+            <button class="btn-gold" onclick="regenerateAll()">Regenerate All Pages</button>
+        </div>
+    `;
+}
+
+/* ========== Series View ========== */
+function showSeries() {
+    currentView = 'series';
+    setActiveNav('series');
+    const series = catalog.series;
+
+    let cards = '';
+    const sorted = Object.entries(series).sort((a, b) => (a[1].order || 0) - (b[1].order || 0));
+    for (const [key, s] of sorted) {
+        const pCount = Object.keys(s.products).length;
+        const img = s.card_image || 'images/hero-2.jpg';
+        cards += `
+        <div class="item-card">
+            <img src="/${img}" alt="${s.name}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22180%22><rect fill=%22%231a1a1a%22 width=%22300%22 height=%22180%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23666%22 text-anchor=%22middle%22 dy=%22.3em%22>No Image</text></svg>'">
+            <div class="info">
+                <h3>${s.name}</h3>
+                <small>${pCount} product${pCount !== 1 ? 's' : ''}</small>
+                <div style="margin-top:.75rem;display:flex;gap:.5rem">
+                    <button class="btn-outline btn-sm" onclick="editSeries('${key}')">Edit</button>
+                    <button class="btn-gold btn-sm" onclick="showProducts('${key}')">Products</button>
+                </div>
+            </div>
+        </div>`;
+    }
+
+    document.getElementById('contentArea').innerHTML = `
+        <div class="section-head">
+            <h2>Series</h2>
+            <button class="btn-gold" onclick="openNewSeriesModal()">+ Add Series</button>
+        </div>
+        <div class="card-grid">${cards}</div>
+    `;
+}
+
+/* ========== Products View ========== */
+function showProducts(seriesKey) {
+    currentView = 'products';
+    currentSeriesKey = seriesKey;
+    setActiveNav('series');
+    const series = catalog.series[seriesKey];
+    if (!series) return;
+
+    const sorted = Object.values(series.products).sort((a, b) => (a.order || 0) - (b.order || 0));
+    let cards = '';
+    for (const p of sorted) {
+        const img = p.render_images && p.render_images.length
+            ? `images/collections/${seriesKey}-series/${p.slug}/${p.render_images[0]}`
+            : '';
+        cards += `
+        <div class="item-card" onclick="showProductEditor('${seriesKey}','${p.slug}')">
+            <img src="/${img}" alt="${p.name}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22180%22><rect fill=%22%231a1a1a%22 width=%22300%22 height=%22180%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23666%22 text-anchor=%22middle%22 dy=%22.3em%22>No Image</text></svg>'">
+            <div class="info"><h3>${p.name}</h3><small>${(p.slab_images||[]).length} slabs, ${(p.render_images||[]).length} renders</small></div>
+        </div>`;
+    }
+
+    document.getElementById('contentArea').innerHTML = `
+        <div class="breadcrumb-nav"><a href="#" onclick="showSeries()">Series</a><span>/</span>${series.name}</div>
+        <div class="section-head">
+            <h2>${series.name}</h2>
+            <div style="display:flex;gap:.5rem">
+                <button class="btn-outline" onclick="regenerateSeries('${seriesKey}')">Regenerate Series</button>
+                <button class="btn-gold" onclick="openNewProductModal('${seriesKey}')">+ Add Product</button>
+            </div>
+        </div>
+        <div class="card-grid">${cards}</div>
+    `;
+}
+
+/* ========== Product Editor ========== */
+function showProductEditor(seriesKey, slug) {
+    currentView = 'editor';
+    currentSeriesKey = seriesKey;
+    currentProductSlug = slug;
+    setActiveNav('series');
+    const series = catalog.series[seriesKey];
+    const product = series.products[slug];
+    if (!product) return;
+
+    const imgBase = `images/collections/${seriesKey}-series/${slug}`;
+
+    function imgGrid(images, type) {
+        let html = '<div class="img-grid">';
+        for (const img of images || []) {
+            html += `
+            <div class="img-thumb">
+                <img src="/${imgBase}/${img}" alt="${img}">
+                <button class="del-btn" onclick="deleteImage('${seriesKey}','${slug}','${type}','${img}')" title="Delete">&times;</button>
+            </div>`;
+        }
+        html += `
+        <div class="drop-zone" id="drop_${type}" onclick="document.getElementById('file_${type}').click()">
+            +
+            <input type="file" id="file_${type}" multiple accept="image/*" onchange="uploadFiles('${seriesKey}','${slug}','${type}',this.files)">
+        </div></div>`;
+        return html;
+    }
+
+    document.getElementById('contentArea').innerHTML = `
+        <div class="breadcrumb-nav">
+            <a href="#" onclick="showSeries()">Series</a><span>/</span>
+            <a href="#" onclick="showProducts('${seriesKey}')">${series.name}</a><span>/</span>
+            ${product.name}
+        </div>
+        <div class="section-head">
+            <h2>${product.name}</h2>
+            <div style="display:flex;gap:.5rem">
+                <button class="btn-danger" onclick="deleteProduct('${seriesKey}','${slug}')">Delete Product</button>
+            </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem" id="editorForm">
+            <div>
+                <div class="form-group"><label>Product Name</label><input id="edName" value="${product.name}"></div>
+                <div class="form-group"><label>Description</label><textarea id="edDesc" rows="3">${product.description}</textarea></div>
+                <div class="form-group"><label>Thickness</label><input id="edThick" value="${product.thickness}"></div>
+                <div class="form-group"><label>Size</label><input id="edSize" value="${product.size}"></div>
+            </div>
+            <div>
+                <div class="form-group">
+                    <label>Slab Images</label>
+                    ${imgGrid(product.slab_images, 'slab')}
+                </div>
+                <div class="form-group">
+                    <label>Render Images</label>
+                    ${imgGrid(product.render_images, 'render')}
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:1.5rem;display:flex;gap:.75rem">
+            <button class="btn-outline" onclick="saveProduct('${seriesKey}','${slug}',false)">Save</button>
+            <button class="btn-gold" onclick="saveProduct('${seriesKey}','${slug}',true)">Save & Regenerate</button>
+        </div>
+    `;
+
+    // Setup drag and drop
+    ['slab','render'].forEach(type => {
+        const zone = document.getElementById('drop_' + type);
+        if (!zone) return;
+        zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('dragover'); });
+        zone.addEventListener('dragleave', () => zone.classList.remove('dragover'));
+        zone.addEventListener('drop', e => {
+            e.preventDefault();
+            zone.classList.remove('dragover');
+            uploadFiles(seriesKey, slug, type, e.dataTransfer.files);
+        });
+    });
+}
+
+/* ========== Regenerate View ========== */
+function showRegenerate() {
+    currentView = 'regenerate';
+    setActiveNav('regenerate');
+    document.getElementById('contentArea').innerHTML = `
+        <h2 style="margin-bottom:1.5rem">Regenerate Pages</h2>
+        <p style="color:var(--text2);margin-bottom:1.5rem">Rebuild HTML pages from the catalog data.</p>
+        <div style="display:flex;gap:.75rem;margin-bottom:1.5rem">
+            <button class="btn-gold" onclick="regenerateAll()">Regenerate All Pages</button>
+        </div>
+        <div class="log-output" id="regenLog" style="display:none"></div>
+    `;
+}
+
+/* ========== CRUD Functions ========== */
+
+async function saveProduct(seriesKey, slug, regen) {
+    try {
+        await api('PUT', `/admin/api/series/${seriesKey}/products/${slug}`, {
+            name: document.getElementById('edName').value,
+            description: document.getElementById('edDesc').value,
+            thickness: document.getElementById('edThick').value,
+            size: document.getElementById('edSize').value,
+        });
+        await loadCatalog();
+        toast('Product saved');
+        if (regen) {
+            await api('POST', `/admin/api/regenerate/${seriesKey}`);
+            toast('Pages regenerated');
+        }
+        showProductEditor(seriesKey, slug);
+    } catch (e) { toast(e.message, 'error'); }
+}
+
+async function deleteProduct(seriesKey, slug) {
+    if (!confirm('Delete this product and all its files?')) return;
+    try {
+        await api('DELETE', `/admin/api/series/${seriesKey}/products/${slug}`);
+        await loadCatalog();
+        toast('Product deleted');
+        showProducts(seriesKey);
+    } catch (e) { toast(e.message, 'error'); }
+}
+
+function editSeries(key) {
+    const s = catalog.series[key];
+    document.getElementById('smKey').value = key;
+    document.getElementById('smName').value = s.name;
+    document.getElementById('smDesc').value = s.description || '';
+    document.getElementById('seriesModalTitle').textContent = 'Edit: ' + s.name;
+    new bootstrap.Modal(document.getElementById('seriesModal')).show();
+}
+
+async function saveSeries() {
+    const key = document.getElementById('smKey').value;
+    try {
+        await api('PUT', `/admin/api/series/${key}`, {
+            name: document.getElementById('smName').value,
+            description: document.getElementById('smDesc').value,
+        });
+        await loadCatalog();
+        bootstrap.Modal.getInstance(document.getElementById('seriesModal')).hide();
+        toast('Series updated');
+        showSeries();
+    } catch (e) { toast(e.message, 'error'); }
+}
+
+function openNewSeriesModal() {
+    document.getElementById('nsName').value = '';
+    document.getElementById('nsKey').value = '';
+    new bootstrap.Modal(document.getElementById('newSeriesModal')).show();
+}
+document.getElementById('nsName').addEventListener('input', function() {
+    document.getElementById('nsKey').value = slugify(this.value);
+});
+
+async function createNewSeries() {
+    try {
+        await api('POST', '/admin/api/series', {
+            key: document.getElementById('nsKey').value,
+            name: document.getElementById('nsName').value,
+        });
+        await loadCatalog();
+        bootstrap.Modal.getInstance(document.getElementById('newSeriesModal')).hide();
+        toast('Series created');
+        showSeries();
+    } catch (e) { toast(e.message, 'error'); }
+}
+
+function openNewProductModal(seriesKey) {
+    currentSeriesKey = seriesKey;
+    document.getElementById('npName').value = '';
+    document.getElementById('npSlug').textContent = '-';
+    new bootstrap.Modal(document.getElementById('newProductModal')).show();
+}
+document.getElementById('npName').addEventListener('input', function() {
+    document.getElementById('npSlug').textContent = slugify(this.value) || '-';
+});
+
+async function createNewProduct() {
+    try {
+        await api('POST', `/admin/api/series/${currentSeriesKey}/products`, {
+            name: document.getElementById('npName').value,
+        });
+        await loadCatalog();
+        bootstrap.Modal.getInstance(document.getElementById('newProductModal')).hide();
+        toast('Product created');
+        showProducts(currentSeriesKey);
+    } catch (e) { toast(e.message, 'error'); }
+}
+
+/* ========== Image Upload ========== */
+async function uploadFiles(seriesKey, slug, type, files) {
+    if (!files || !files.length) return;
+    const fd = new FormData();
+    for (const f of files) fd.append('files', f);
+    try {
+        toast('Uploading...', 'info');
+        await api('POST', `/admin/api/upload/${type}/${seriesKey}/${slug}`, fd);
+        await loadCatalog();
+        toast('Images uploaded');
+        showProductEditor(seriesKey, slug);
+    } catch (e) { toast(e.message, 'error'); }
+}
+
+async function deleteImage(seriesKey, slug, type, filename) {
+    if (!confirm(`Delete ${filename}?`)) return;
+    try {
+        await api('DELETE', `/admin/api/image/${type}/${seriesKey}/${slug}/${filename}`);
+        await loadCatalog();
+        toast('Image deleted');
+        showProductEditor(seriesKey, slug);
+    } catch (e) { toast(e.message, 'error'); }
+}
+
+/* ========== Regeneration ========== */
+async function regenerateAll() {
+    try {
+        toast('Regenerating all pages...', 'info');
+        const result = await api('POST', '/admin/api/regenerate');
+        const logEl = document.getElementById('regenLog');
+        if (logEl) {
+            logEl.style.display = 'block';
+            logEl.textContent = (result.log || []).join('\n');
+        }
+        toast(`Regenerated ${(result.log || []).length} pages`);
+    } catch (e) { toast(e.message, 'error'); }
+}
+
+async function regenerateSeries(seriesKey) {
+    try {
+        toast('Regenerating series...', 'info');
+        const result = await api('POST', `/admin/api/regenerate/${seriesKey}`);
+        toast(`Regenerated ${(result.log || []).length} pages`);
+    } catch (e) { toast(e.message, 'error'); }
+}
+
+/* ========== Init: check session ========== */
+(async function init() {
+    try {
+        catalog = await api('GET', '/admin/api/catalog');
+        document.getElementById('loginScreen').style.display = 'none';
+        document.getElementById('mainPanel').style.display = 'block';
+        showDashboard();
+    } catch {
+        // Not logged in — show login
+        document.getElementById('loginHint').textContent =
+            'First login will set your admin password.';
+    }
+})();
+</script>
+</body>
+</html>

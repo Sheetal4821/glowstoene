@@ -1,0 +1,848 @@
+{
+  "series": {
+    "onyx": {
+      "name": "Onyx Series",
+      "description": "Onyx quartz slabs replicate the beauty of natural onyx while offering the strength and performance of quartz surfaces. Designed for backlit applications, feature walls, countertops, and decorative installations, these quartz slabs deliver a dramatic translucent look with the durability, non-porous properties, and easy maintenance of engineered quartz.",
+      "hero_image": "images/collections/onyx-series/crystal-ash/render.png",
+      "card_image": "images/collections/onyx-series/crystal-ash/render.png",
+      "order": 1,
+      "products": {
+        "crystal-ash": {
+          "name": "Crystal Ash",
+          "slug": "crystal-ash",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg",
+            "slab-3.jpg",
+            "slab-4.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 1
+        },
+        "luminous-gold": {
+          "name": "Luminous Gold",
+          "slug": "luminous-gold",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg",
+            "slab-3.jpg",
+            "slab-4.jpg",
+            "slab-5.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 2
+        },
+        "marigold": {
+          "name": "Marigold",
+          "slug": "marigold",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg",
+            "slab-3.jpg"
+          ],
+          "render_images": [
+            "render.jpg",
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 3
+        },
+        "nectar": {
+          "name": "Nectar",
+          "slug": "nectar",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg",
+            "slab-3.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 4
+        },
+        "trinity": {
+          "name": "Trinity",
+          "slug": "trinity",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg",
+            "slab-3.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 5
+        }
+      }
+    },
+    "pastel": {
+      "name": "Pastel Series",
+      "description": "Pastel quartz slabs feature soft and subtle color tones that bring a calm and contemporary feel to interiors. These quartz surfaces are ideal for modern kitchens, bathrooms, and decorative interior applications where light, elegant colors enhance the overall design while maintaining the strength and durability of quartz.",
+      "hero_image": "images/collections/pastel-series/peony/render.png",
+      "card_image": "images/collections/pastel-series/peony/render.png",
+      "order": 2,
+      "products": {
+        "mauve": {
+          "name": "Mauve",
+          "slug": "mauve",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-alt.png"
+          ],
+          "order": 1
+        },
+        "peony": {
+          "name": "Peony",
+          "slug": "peony",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 2
+        },
+        "sage": {
+          "name": "Sage",
+          "slug": "sage",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 3
+        },
+        "seafoam": {
+          "name": "Seafoam",
+          "slug": "seafoam",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 4
+        }
+      }
+    },
+    "plain": {
+      "name": "Plain Series",
+      "description": "Plain quartz slabs feature clean, solid colors that suit a wide range of interior styles. These timeless quartz surfaces are ideal for kitchen countertops, bathroom vanities, wall cladding, and workspaces where a minimal and elegant look is desired. Simple, versatile, and durable, plain quartz designs complement both modern and classic interiors.",
+      "hero_image": "images/hero-2.jpg",
+      "card_image": "images/collections/plain-series/glacier-white/render.png",
+      "order": 3,
+      "products": {
+        "frost-white": {
+          "name": "Frost White",
+          "slug": "frost-white",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 1
+        },
+        "glacier-white": {
+          "name": "Glacier White",
+          "slug": "glacier-white",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 2
+        },
+        "meraki": {
+          "name": "Meraki",
+          "slug": "meraki",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 3
+        }
+      }
+    },
+    "calacatta": {
+      "name": "Calacatta Series",
+      "description": "Calacatta quartz slabs feature bold and flowing veins across bright backgrounds, inspired by the luxurious appearance of Calacatta marble. These premium quartz surfaces create a striking visual statement and are widely used for kitchen countertops, islands, bathroom vanities, and feature walls in high-end interior spaces.",
+      "hero_image": "images/hero-2.jpg",
+      "card_image": "images/collections/calacatta-series/alabama/render.png",
+      "order": 4,
+      "products": {
+        "alabama": {
+          "name": "Alabama",
+          "slug": "alabama",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 1
+        },
+        "aspen-gold": {
+          "name": "Aspen Gold",
+          "slug": "aspen-gold",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png"
+          ],
+          "order": 2
+        },
+        "aurika": {
+          "name": "Aurika",
+          "slug": "aurika",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 3
+        },
+        "avalanche": {
+          "name": "Avalanche",
+          "slug": "avalanche",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.jpg",
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 4
+        },
+        "everest-grey": {
+          "name": "Everest Grey",
+          "slug": "everest-grey",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.jpg",
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 5
+        },
+        "harmony-gold": {
+          "name": "Harmony Gold",
+          "slug": "harmony-gold",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.jpg",
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 6
+        },
+        "marquina-noir": {
+          "name": "Marquina Noir",
+          "slug": "marquina-noir",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 7
+        },
+        "narina-gold": {
+          "name": "Narina Gold",
+          "slug": "narina-gold",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 8
+        },
+        "narina-grey": {
+          "name": "Narina Grey",
+          "slug": "narina-grey",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.png"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 9
+        },
+        "nova": {
+          "name": "Nova",
+          "slug": "nova",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 10
+        },
+        "panda-white": {
+          "name": "Panda White",
+          "slug": "panda-white",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.jpg",
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 11
+        },
+        "perla-venata": {
+          "name": "Perla Venata",
+          "slug": "perla-venata",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png"
+          ],
+          "order": 12
+        },
+        "sahara-noir": {
+          "name": "Sahara Noir",
+          "slug": "sahara-noir",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.jpg",
+            "render.png",
+            "render-1.png"
+          ],
+          "order": 13
+        },
+        "vienna": {
+          "name": "Vienna",
+          "slug": "vienna",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 14
+        }
+      }
+    },
+    "budget": {
+      "name": "Budget Series",
+      "description": "Affordable quartz slabs designed for projects that require durability and value. The Budget Series offers pocket-friendly quartz surfaces suitable for commercial spaces, residential interiors, and large-scale developments. These slabs provide reliable performance, easy maintenance, and modern aesthetics while keeping project costs under control.",
+      "hero_image": "images/collections/budget-series/black-starlight/render.png",
+      "card_image": "images/collections/budget-series/crema/render.png",
+      "order": 5,
+      "products": {
+        "black-starlight": {
+          "name": "Black Starlight",
+          "slug": "black-starlight",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 1
+        },
+        "brown-starlight": {
+          "name": "Brown Starlight",
+          "slug": "brown-starlight",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 2
+        },
+        "cream-mirror": {
+          "name": "Cream Mirror",
+          "slug": "cream-mirror",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 3
+        },
+        "crema": {
+          "name": "Crema",
+          "slug": "crema",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png",
+            "render-4.png"
+          ],
+          "order": 4
+        },
+        "gracio": {
+          "name": "Gracio",
+          "slug": "gracio",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 5
+        },
+        "grey-starlight": {
+          "name": "Grey Starlight",
+          "slug": "grey-starlight",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 6
+        },
+        "grey-terrazo": {
+          "name": "Grey Terrazo",
+          "slug": "grey-terrazo",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 7
+        },
+        "halo": {
+          "name": "Halo",
+          "slug": "halo",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 8
+        },
+        "snowflake": {
+          "name": "Snowflake",
+          "slug": "snowflake",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 9
+        },
+        "walnut": {
+          "name": "Walnut",
+          "slug": "walnut",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 10
+        },
+        "white-starlight": {
+          "name": "White Starlight",
+          "slug": "white-starlight",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 11
+        },
+        "white-terrazo": {
+          "name": "White Terrazo",
+          "slug": "white-terrazo",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 12
+        }
+      }
+    },
+    "carrara": {
+      "name": "Carrara Series",
+      "description": "Carrara quartz slabs feature subtle Carrara-style veins sprinkled across the surface, creating a marble-inspired look. These quartz surfaces combine the timeless appearance of Carrara marble with the durability and low maintenance of engineered quartz, making them ideal for countertops, kitchen islands, and interior applications.",
+      "hero_image": "images/collections/carrara-series/orion-white/render.png",
+      "card_image": "images/collections/carrara-series/orion-white/render.png",
+      "order": 6,
+      "products": {
+        "aurum": {
+          "name": "Aurum",
+          "slug": "aurum",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 1
+        },
+        "bellagio": {
+          "name": "Bellagio",
+          "slug": "bellagio",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 2
+        },
+        "bianco-nova": {
+          "name": "Bianco Nova",
+          "slug": "bianco-nova",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 3
+        },
+        "blaze": {
+          "name": "Blaze",
+          "slug": "blaze",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 4
+        },
+        "fossil": {
+          "name": "Fossil",
+          "slug": "fossil",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png"
+          ],
+          "order": 5
+        },
+        "gold-mine": {
+          "name": "Gold Mine",
+          "slug": "gold-mine",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png"
+          ],
+          "order": 6
+        },
+        "orion-white": {
+          "name": "Orion White",
+          "slug": "orion-white",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg",
+            "slab-2.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png",
+            "render-2.png",
+            "render-3.png"
+          ],
+          "order": 7
+        },
+        "rayon": {
+          "name": "Rayon",
+          "slug": "rayon",
+          "description": "Premium engineered quartz for kitchens, vanities, and commercial use—durable, low-maintenance, and consistent in colour.",
+          "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
+          "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
+          "slab_images": [
+            "slab.jpg"
+          ],
+          "render_images": [
+            "render.png",
+            "render-1.png"
+          ],
+          "order": 8
+        }
+      }
+    }
+  }
+}
