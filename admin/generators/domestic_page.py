@@ -10,7 +10,7 @@ def render_domestic_page(catalog: dict) -> str:
     """Render the collection-domestic.html page."""
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
-        autoescape=False,
+        autoescape=True,
         keep_trailing_newline=True,
     )
     template = env.get_template("domestic.html")

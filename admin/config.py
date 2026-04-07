@@ -19,8 +19,3 @@ SESSION_LIFETIME_HOURS = 24
 # Upload limits
 MAX_UPLOAD_SIZE_MB = 20
 ALLOWED_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
-MAX_SLAB_IMAGES = 6
-MAX_RENDER_IMAGES = 8
-
-# Site URL base
-SITE_URL = "https://www.glowstone.co.in"

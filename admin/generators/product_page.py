@@ -19,7 +19,7 @@ def render_product_page(series_key: str, series_name: str, product: dict) -> str
     """Render a complete product HTML page."""
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
-        autoescape=False,
+        autoescape=True,
         keep_trailing_newline=True,
     )
     template = env.get_template("product.html")

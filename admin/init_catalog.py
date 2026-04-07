@@ -1,7 +1,6 @@
 """One-time script to build catalog.json from existing HTML pages and image directories."""
 
 import json
-import os
 import re
 from pathlib import Path
 

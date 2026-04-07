@@ -1061,44 +1061,6 @@
     border-radius: 4px;
 }
 
-/* SWOT */
-.swot-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-
-.swot-card {
-    background: rgba(235, 228, 216, 0.03);
-    border: 1px solid rgba(201, 169, 98, 0.2);
-    border-radius: 8px;
-    padding: 2rem;
-}
-
-.swot-card h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    margin-bottom: 1rem;
-}
-
-.swot-strengths h3 { color: #7cb342; }
-.swot-opportunities h3 { color: #42a5f5; }
-.swot-weaknesses h3 { color: #ffa726; }
-.swot-threats h3 { color: #ef5350; }
-
-.swot-card p {
-    font-size: 0.95rem;
-    color: rgba(232, 228, 223, 0.85);
-    line-height: 1.6;
-    margin: 0;
-}
-
-@media (max-width: 767.98px) {
-    .swot-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* ===== Global Reach / Where Our Slabs Shine ===== */
 .gr-section {

@@ -9,7 +9,7 @@ from datetime import timedelta
 from pathlib import Path
 
 from flask import (
-    Flask, jsonify, redirect, render_template, request, session, url_for,
+    Flask, jsonify, render_template, request, session,
 )
 
 # Allow importing from project scripts/
@@ -470,7 +470,7 @@ def regenerate_all():
             out.write_text(html, encoding="utf-8")
             log.append(f"Generated {out.name}")
         except Exception as e:
-            log.append(f"Error generating {series_key} series page: {e}")
+            log.append(f"Error generating {series_key} series page")
 
         # Generate product pages
         for slug, product in series["products"].items():
@@ -592,7 +592,7 @@ def main():
         print(f"Warning: {CATALOG_PATH} not found. Run init_catalog.py first.")
 
     print(f"Starting admin panel at http://{args.host}:{args.port}/admin")
-    app.run(host=args.host, port=args.port, debug=True)
+    app.run(host=args.host, port=args.port, debug=os.environ.get("FLASK_ENV") == "development")
 
 
 if __name__ == "__main__":

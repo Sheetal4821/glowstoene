@@ -208,8 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Thank you for your message! We will get back to you soon.');
             this.reset();
             if (charCount) {
-                var max = messageInput ? (messageInput.getAttribute('maxlength') || 200) : 200;
-                charCount.textContent = '0 / ' + max + ' characters';
+                charCount.textContent = '0 / ' + maxLen + ' characters';
             }
         });
     }
@@ -350,7 +349,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.addEventListener('click', function() {
                     var container = item.closest(containerSelector);
                     if (!container) return;
-                    images = Array.from(container.querySelectorAll(imgSelector)).map(function(i) { return i; });
+                    images = Array.from(container.querySelectorAll(imgSelector));
                     var triggers = Array.from(container.querySelectorAll(itemSelector));
                     var idx = triggers.indexOf(item);
                     openLightbox(idx >= 0 ? idx : 0, wrapCarousel);

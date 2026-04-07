@@ -10,7 +10,7 @@ def render_series_page(series_key: str, series: dict) -> str:
     """Render a complete series listing HTML page."""
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
-        autoescape=False,
+        autoescape=True,
         keep_trailing_newline=True,
     )
     template = env.get_template("series.html")

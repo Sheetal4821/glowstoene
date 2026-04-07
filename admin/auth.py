@@ -1,7 +1,6 @@
 """Simple password authentication for the admin panel."""
 
 import bcrypt
-from pathlib import Path
 from . import config
 
 

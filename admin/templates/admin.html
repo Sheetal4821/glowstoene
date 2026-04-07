@@ -216,7 +216,10 @@ function toast(msg, type='success') {
     const el = document.createElement('div');
     el.className = 'toast show';
     el.setAttribute('role','alert');
-    el.innerHTML = `<div style="background:${bg};color:#fff;padding:.75rem 1.25rem;border-radius:var(--radius);margin-bottom:.5rem;font-size:.875rem;box-shadow:0 4px 12px rgba(0,0,0,.3)">${msg}</div>`;
+    const inner = document.createElement('div');
+    inner.style.cssText = `background:${bg};color:#fff;padding:.75rem 1.25rem;border-radius:var(--radius);margin-bottom:.5rem;font-size:.875rem;box-shadow:0 4px 12px rgba(0,0,0,.3)`;
+    inner.textContent = msg;
+    el.appendChild(inner);
     wrap.appendChild(el);
     setTimeout(() => el.remove(), 3500);
 }
