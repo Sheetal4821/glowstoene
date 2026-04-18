@@ -3,8 +3,8 @@
     "onyx": {
       "name": "Onyx Series",
       "description": "Onyx quartz slabs replicate the beauty of natural onyx while offering the strength and performance of quartz surfaces. Designed for backlit applications, feature walls, countertops, and decorative installations, these quartz slabs deliver a dramatic translucent look with the durability, non-porous properties, and easy maintenance of engineered quartz.",
-      "hero_image": "images/collections/onyx-series/crystal-ash/render.png",
-      "card_image": "images/collections/onyx-series/crystal-ash/render.png",
+      "hero_image": "images/collections/onyx-series/crystal-ash/render.jpg",
+      "card_image": "images/collections/onyx-series/crystal-ash/render.jpg",
       "order": 1,
       "products": {
         "crystal-ash": {
@@ -20,9 +20,9 @@
             "slab-4.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 1
         },
@@ -40,9 +40,9 @@
             "slab-5.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 2
         },
@@ -58,10 +58,10 @@
             "slab-3.jpg"
           ],
           "render_images": [
-            "render.jpg",
             "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.png",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 3
         },
@@ -77,9 +77,9 @@
             "slab-3.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 4
         },
@@ -95,9 +95,9 @@
             "slab-3.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 5
         }
@@ -106,8 +106,8 @@
     "pastel": {
       "name": "Pastel Series",
       "description": "Pastel quartz slabs feature soft and subtle color tones that bring a calm and contemporary feel to interiors. These quartz surfaces are ideal for modern kitchens, bathrooms, and decorative interior applications where light, elegant colors enhance the overall design while maintaining the strength and durability of quartz.",
-      "hero_image": "images/collections/pastel-series/peony/render.png",
-      "card_image": "images/collections/pastel-series/peony/render.png",
+      "hero_image": "images/collections/pastel-series/peony/render.jpg",
+      "card_image": "images/collections/pastel-series/peony/render.jpg",
       "order": 2,
       "products": {
         "mauve": {
@@ -120,9 +120,9 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-alt.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-alt.jpg"
           ],
           "order": 1
         },
@@ -136,9 +136,9 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 2
         },
@@ -152,10 +152,10 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 3
         },
@@ -169,10 +169,10 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 4
         }
@@ -182,7 +182,7 @@
       "name": "Plain Series",
       "description": "Plain quartz slabs feature clean, solid colors that suit a wide range of interior styles. These timeless quartz surfaces are ideal for kitchen countertops, bathroom vanities, wall cladding, and workspaces where a minimal and elegant look is desired. Simple, versatile, and durable, plain quartz designs complement both modern and classic interiors.",
       "hero_image": "images/hero-2.jpg",
-      "card_image": "images/collections/plain-series/glacier-white/render.png",
+      "card_image": "images/collections/plain-series/glacier-white/render.jpg",
       "order": 3,
       "products": {
         "frost-white": {
@@ -196,9 +196,9 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 1
         },
@@ -212,10 +212,10 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 2
         },
@@ -230,10 +230,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 3
         }
@@ -243,7 +243,7 @@
       "name": "Calacatta Series",
       "description": "Calacatta quartz slabs feature bold and flowing veins across bright backgrounds, inspired by the luxurious appearance of Calacatta marble. These premium quartz surfaces create a striking visual statement and are widely used for kitchen countertops, islands, bathroom vanities, and feature walls in high-end interior spaces.",
       "hero_image": "images/hero-2.jpg",
-      "card_image": "images/collections/calacatta-series/alabama/render.png",
+      "card_image": "images/collections/calacatta-series/alabama/render.jpg",
       "order": 4,
       "products": {
         "alabama": {
@@ -257,10 +257,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 1
         },
@@ -275,8 +275,8 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png"
+            "render.jpg",
+            "render-1.jpg"
           ],
           "order": 2
         },
@@ -291,10 +291,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 3
         },
@@ -309,10 +309,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.jpg",
             "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.png",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 4
         },
@@ -327,10 +327,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.jpg",
             "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.png",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 5
         },
@@ -345,10 +345,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.jpg",
             "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.png",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 6
         },
@@ -363,10 +363,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 7
         },
@@ -381,10 +381,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 8
         },
@@ -395,12 +395,12 @@
           "thickness": "20 mm & 30 mm (availability may vary by design — confirm with Glowstone).",
           "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
           "slab_images": [
-            "slab.png"
+            "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 9
         },
@@ -415,10 +415,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 10
         },
@@ -433,10 +433,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.jpg",
             "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.png",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 11
         },
@@ -451,7 +451,7 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png"
+            "render.jpg"
           ],
           "order": 12
         },
@@ -466,9 +466,9 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.jpg",
             "render.png",
-            "render-1.png"
+            "render.png",
+            "render-1.jpg"
           ],
           "order": 13
         },
@@ -483,9 +483,9 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 14
         }
@@ -494,8 +494,8 @@
     "budget": {
       "name": "Budget Series",
       "description": "Affordable quartz slabs designed for projects that require durability and value. The Budget Series offers pocket-friendly quartz surfaces suitable for commercial spaces, residential interiors, and large-scale developments. These slabs provide reliable performance, easy maintenance, and modern aesthetics while keeping project costs under control.",
-      "hero_image": "images/collections/budget-series/black-starlight/render.png",
-      "card_image": "images/collections/budget-series/crema/render.png",
+      "hero_image": "images/collections/budget-series/black-starlight/render.jpg",
+      "card_image": "images/collections/budget-series/crema/render.jpg",
       "order": 5,
       "products": {
         "black-starlight": {
@@ -508,10 +508,10 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 1
         },
@@ -525,9 +525,9 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 2
         },
@@ -541,9 +541,9 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 3
         },
@@ -558,11 +558,11 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png",
-            "render-4.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg",
+            "render-4.jpg"
           ],
           "order": 4
         },
@@ -576,10 +576,10 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 5
         },
@@ -593,10 +593,10 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 6
         },
@@ -611,10 +611,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 7
         },
@@ -629,9 +629,9 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 8
         },
@@ -646,9 +646,9 @@
           ],
           "render_images": [
             "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 9
         },
@@ -662,9 +662,9 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 10
         },
@@ -676,9 +676,9 @@
           "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
           "slab_images": [],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 11
         },
@@ -693,10 +693,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 12
         }
@@ -705,8 +705,8 @@
     "carrara": {
       "name": "Carrara Series",
       "description": "Carrara quartz slabs feature subtle Carrara-style veins sprinkled across the surface, creating a marble-inspired look. These quartz surfaces combine the timeless appearance of Carrara marble with the durability and low maintenance of engineered quartz, making them ideal for countertops, kitchen islands, and interior applications.",
-      "hero_image": "images/collections/carrara-series/orion-white/render.png",
-      "card_image": "images/collections/carrara-series/orion-white/render.png",
+      "hero_image": "images/collections/carrara-series/orion-white/render.jpg",
+      "card_image": "images/collections/carrara-series/orion-white/render.jpg",
       "order": 6,
       "products": {
         "aurum": {
@@ -720,9 +720,9 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 1
         },
@@ -736,9 +736,9 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 2
         },
@@ -753,9 +753,9 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 3
         },
@@ -770,9 +770,9 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 4
         },
@@ -787,9 +787,9 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg"
           ],
           "order": 5
         },
@@ -804,8 +804,8 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png"
+            "render.jpg",
+            "render-1.jpg"
           ],
           "order": 6
         },
@@ -820,10 +820,10 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png",
-            "render-2.png",
-            "render-3.png"
+            "render.jpg",
+            "render-1.jpg",
+            "render-2.jpg",
+            "render-3.jpg"
           ],
           "order": 7
         },
@@ -837,8 +837,8 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render-1.png"
+            "render.jpg",
+            "render-1.jpg"
           ],
           "order": 8
         }
