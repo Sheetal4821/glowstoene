@@ -11,6 +11,12 @@ from pathlib import Path
 from flask import (
     Flask, jsonify, render_template, request, session,
 )
+from PIL import Image
+
+Image.MAX_IMAGE_PIXELS = None
+
+MAX_IMAGE_WIDTH = 1920
+JPEG_QUALITY = 92
 
 # Allow importing from project scripts/
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -92,6 +98,22 @@ def next_image_name(directory: Path, prefix: str, ext: str) -> str:
         if not (directory / name).exists():
             return name
         i += 1
+
+
+def optimize_upload(file_storage, dest: Path) -> None:
+    """Resize and compress an uploaded image to high-quality JPEG.
+
+    - Resizes to max 1920px wide (aspect ratio preserved)
+    - Saves as JPEG quality 92 (visually identical to original)
+    - Handles JPEG, PNG, and WebP inputs
+    """
+    img = Image.open(file_storage)
+    if img.mode in ("RGBA", "LA", "P"):
+        img = img.convert("RGB")
+    if img.width > MAX_IMAGE_WIDTH:
+        new_h = round(img.height * MAX_IMAGE_WIDTH / img.width)
+        img = img.resize((MAX_IMAGE_WIDTH, new_h), Image.Resampling.LANCZOS)
+    img.save(dest, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
 
 
 # ---------------------------------------------------------------------------
@@ -350,24 +372,9 @@ def upload_slab(series_key, slug):
     for f in files:
         if not f.filename or not allowed_file(f.filename):
             continue
-
-        # Try to use slab_common for processing
-        try:
-            from slab_common import process_to_jpeg
-            import tempfile
-            ext_in = Path(f.filename).suffix.lower()
-            with tempfile.NamedTemporaryFile(suffix=ext_in, delete=False) as tmp:
-                f.save(tmp.name)
-                out_name = next_image_name(img_dir, "slab", ".jpg")
-                dest = img_dir / out_name
-                process_to_jpeg(Path(tmp.name), dest)
-                os.unlink(tmp.name)
-        except ImportError:
-            # Fallback: save as-is
-            out_name = next_image_name(img_dir, "slab", ".jpg")
-            dest = img_dir / out_name
-            f.save(str(dest))
-
+        out_name = next_image_name(img_dir, "slab", ".jpg")
+        dest = img_dir / out_name
+        optimize_upload(f, dest)
         uploaded.append(out_name)
 
     # Update catalog
@@ -403,12 +410,9 @@ def upload_render(series_key, slug):
     for f in files:
         if not f.filename or not allowed_file(f.filename):
             continue
-        ext = Path(f.filename).suffix.lower()
-        if ext not in (".png", ".jpg", ".jpeg"):
-            ext = ".png"
-        out_name = next_image_name(img_dir, "render", ext)
+        out_name = next_image_name(img_dir, "render", ".jpg")
         dest = img_dir / out_name
-        f.save(str(dest))
+        optimize_upload(f, dest)
         uploaded.append(out_name)
 
     # Update catalog
