@@ -26,9 +26,9 @@ def render_series_page(series_key: str, series: dict) -> str:
         p["href"] = f"collection-domestic-{series_key}-{p['slug']}.html"
         p["card_image"] = f"images/collections/{series_key}-series/{p['slug']}/{p['render_images'][0]}" if p.get("render_images") else ""
 
-    # Pick og:image from first product's render
-    og_image = ""
-    if sorted_products:
+    # Prefer series hero for social preview; else first product's card image
+    og_image = series.get("hero_image") or ""
+    if not og_image and sorted_products:
         first = sorted_products[0]
         og_image = first.get("card_image", "")
 
