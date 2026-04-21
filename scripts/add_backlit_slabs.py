@@ -20,8 +20,7 @@ JPEG_QUALITY = 92
 # Sources to add as new slab images
 SOURCES = {
     "luminous-gold": Path.home() / "Desktop" / "glowstoene" / "files" / "serises" / "onyx series" / "slab images" / "luminous gold" / "Luminous Gold Backlit.jpg",
-    # Nectar backlit — update this path if you find the file
-    # "nectar": Path.home() / "Desktop" / "..." / "Crystal Jade Backlit.jpg",
+    "nectar": Path.home() / "Desktop" / "glowstoene" / "files" / "serises" / "onyx series" / "slab images" / "nectar" / "crystal jade backlight.jpeg",
 }
 
 
