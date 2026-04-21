@@ -10,8 +10,8 @@
     --text-light: #ebe4d8;
     --surface-elevated: #f5f0ea;
     /* Metropolis sitewide (SIL OFL) */
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-heading: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+    --font-sans: 'Source Sans 3', 'Frutiger LT Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-heading: 'Source Serif 4', 'Publico Banner', 'Georgia', serif;
     --font-size-base: 1.0625rem;
     /* Type scale (rem × browser root, typically 16px) — keep UI text ≥ --text-micro where possible */
     --text-micro: 0.6875rem;   /* 11px — smallest readable small caps */
