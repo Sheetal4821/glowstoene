@@ -53,6 +53,20 @@ PRODUCT_MAP = {
     "Walnut": "walnut",
     "White Starlight": "white-starlight",
     "White Terrazzo": "white-terrazo",
+    "Alabama": "alabama",
+    "Aspen Gold": "aspen-gold",
+    "Aurika": "aurika",
+    "Avalanche": "avalanche",
+    "Everest Grey": "everest-grey",
+    "Harmony Gold": "harmony-gold",
+    "Marquina Noir": "marquina-noir",
+    "Narnia Gold": "narina-gold",
+    "Narnia Grey": "narina-grey",
+    "Nova": "nova",
+    "Panda White": "panda-white",
+    "Perla Venata": "perla-venata",
+    "Sahara Noir": "sahara-noir",
+    "Vienna": "vienna",
     "Astral": "astral",
     "Aurum": "aurum",
     "Bellagio": "bellagio",
@@ -82,10 +96,8 @@ def is_slab_image(path: Path) -> bool:
     parts = [p.lower().strip() for p in path.parts]
     if any("render" in p for p in parts):
         return False
-    if any("backlight" in p for p in parts):
-        return True
     ext = path.suffix.lower()
-    return ext in (".jpg", ".jpeg", ".png")
+    return ext in (".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG")
 
 
 def optimize_and_save(src: Path, dest: Path) -> None:
