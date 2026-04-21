@@ -6,28 +6,28 @@
     --navbar-text: #e8e4df;
     --navbar-accent: #c9a962;
     --navbar-hover: rgba(201, 169, 98, 0.2);
-    /* Replaces pure #fff on dark UI — warm quartz cream */
     --text-light: #ebe4d8;
     --surface-elevated: #f5f0ea;
-    /* Metropolis sitewide (SIL OFL) */
     --font-sans: 'Source Sans 3', 'Frutiger LT Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-heading: 'Source Serif 4', 'Publico Banner', 'Georgia', serif;
     --font-size-base: 1.0625rem;
-    /* Type scale (rem × browser root, typically 16px) — keep UI text ≥ --text-micro where possible */
-    --text-micro: 0.6875rem;   /* 11px — smallest readable small caps */
-    --text-caption: 0.75rem;   /* 12px */
-    --text-small: 0.8125rem;   /* 13px */
-    --text-lead: 1.125rem;     /* 18px — intro / hero subcopy max comfort */
+    --text-micro: 0.6875rem;
+    --text-caption: 0.75rem;
+    --text-small: 0.8125rem;
+    --text-lead: 1.125rem;
+    --bs-body-font-family: 'Source Sans 3', 'Frutiger LT Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--font-heading) !important;
 }
 
 html {
