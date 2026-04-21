@@ -22,8 +22,8 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 
-RAW_DIR = Path.home() / "Desktop" / "slab-images-raw"
 PROJECT_DIR = Path(__file__).resolve().parents[1]
+RAW_DIR = PROJECT_DIR / "files" / "serises" / "slab-images-raw"
 COLLECTIONS_DIR = PROJECT_DIR / "images" / "collections"
 CATALOG_PATH = PROJECT_DIR / "admin" / "data" / "catalog.json"
 
@@ -185,13 +185,15 @@ def main():
     # Save catalog
     CATALOG_PATH.write_text(json.dumps(catalog, indent=2, ensure_ascii=False))
 
+    # Delete the raw source folder after successful processing
+    if total_processed > 0:
+        shutil.rmtree(RAW_DIR)
+        print(f"Deleted raw source folder: {RAW_DIR}")
+
     print(f"\n{'=' * 50}")
     print(f"Processed: {total_processed} slab images")
     print(f"Skipped: {total_skipped} products (no slab images)")
     print(f"Catalog updated: {CATALOG_PATH}")
-    print(f"\nNext steps:")
-    print(f"  1. Check the images look correct")
-    print(f"  2. git add -A && git commit -m 'Replace slab images' && git push origin claude/review-codebase-GzWhg")
 
 
 if __name__ == "__main__":
