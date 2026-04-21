@@ -129,7 +129,6 @@ a:hover{color:#dbb970}
             <ul class="sidebar-nav">
                 <li><a href="#" onclick="showDashboard()" data-view="dashboard" class="active">Dashboard</a></li>
                 <li><a href="#" onclick="showSeries()" data-view="series">Series</a></li>
-                <li><a href="#" onclick="showRegenerate()" data-view="regenerate">Regenerate</a></li>
                 <li><a href="#" onclick="doLogout()" style="color:var(--danger)">Logout</a></li>
             </ul>
         </aside>
@@ -346,7 +345,6 @@ function showProducts(seriesKey) {
         <div class="section-head">
             <h2>${series.name}</h2>
             <div style="display:flex;gap:.5rem">
-                <button class="btn-outline" onclick="regenerateSeries('${seriesKey}')">Regenerate Series</button>
                 <button class="btn-gold" onclick="openNewProductModal('${seriesKey}')">+ Add Product</button>
             </div>
         </div>
@@ -415,7 +413,7 @@ function showProductEditor(seriesKey, slug) {
         </div>
         <div style="margin-top:1.5rem;display:flex;gap:.75rem">
             <button class="btn-outline" onclick="saveProduct('${seriesKey}','${slug}',false)">Save</button>
-            <button class="btn-gold" onclick="saveProduct('${seriesKey}','${slug}',true)">Save & Regenerate</button>
+            <button class="btn-gold" onclick="saveProduct('${seriesKey}','${slug}',true)">Save</button>
         </div>
     `;
 

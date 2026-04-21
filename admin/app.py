@@ -57,6 +57,34 @@ def save_catalog(catalog: dict) -> None:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
 
 
+def _regenerate_series(catalog: dict, series_key: str) -> None:
+    """Regenerate HTML pages for a series + the domestic hub page."""
+    series = catalog["series"].get(series_key)
+    if not series:
+        return
+    try:
+        html = render_series_page(series_key, series)
+        (SITE_ROOT / f"collection-domestic-{series_key}.html").write_text(html, encoding="utf-8")
+    except Exception:
+        pass
+    for slug, product in series["products"].items():
+        try:
+            html = render_product_page(series_key, series["name"], product)
+            (SITE_ROOT / f"collection-domestic-{series_key}-{slug}.html").write_text(html, encoding="utf-8")
+        except Exception:
+            pass
+    _regenerate_domestic(catalog)
+
+
+def _regenerate_domestic(catalog: dict) -> None:
+    """Regenerate the domestic collection hub page."""
+    try:
+        html = render_domestic_page(catalog)
+        (SITE_ROOT / "collection-domestic.html").write_text(html, encoding="utf-8")
+    except Exception:
+        pass
+
+
 def slugify(name: str) -> str:
     """Convert a name to a URL-safe slug."""
     s = name.strip().lower()
@@ -196,6 +224,7 @@ def create_series():
         "products": {},
     }
     save_catalog(catalog)
+    _regenerate_domestic(catalog)
     return jsonify({"ok": True, "key": key})
 
 
@@ -217,6 +246,7 @@ def update_series(key):
         series["order"] = int(data["order"])
 
     save_catalog(catalog)
+    _regenerate_series(catalog, key)
     return jsonify({"ok": True})
 
 
@@ -248,6 +278,7 @@ def delete_series(key):
 
     del catalog["series"][key]
     save_catalog(catalog)
+    _regenerate_domestic(catalog)
     return jsonify({"ok": True})
 
 
@@ -291,6 +322,7 @@ def create_product(series_key):
     img_dir.mkdir(parents=True, exist_ok=True)
 
     save_catalog(catalog)
+    _regenerate_series(catalog, series_key)
     return jsonify({"ok": True, "slug": slug})
 
 
@@ -316,6 +348,7 @@ def update_product(series_key, slug):
         product["order"] = int(data["order"])
 
     save_catalog(catalog)
+    _regenerate_series(catalog, series_key)
     return jsonify({"ok": True})
 
 
@@ -343,6 +376,7 @@ def delete_product(series_key, slug):
 
     del products[slug]
     save_catalog(catalog)
+    _regenerate_series(catalog, series_key)
     return jsonify({"ok": True})
 
 
@@ -384,6 +418,7 @@ def upload_slab(series_key, slug):
         key=lambda n: (0, 0) if n.split(".")[0] == "slab" else (1, int(re.search(r"(\d+)", n).group(1)) if re.search(r"(\d+)", n) else 0),
     )
     save_catalog(catalog)
+    _regenerate_series(catalog, series_key)
 
     return jsonify({"ok": True, "uploaded": uploaded, "slab_images": product["slab_images"]})
 
@@ -422,6 +457,7 @@ def upload_render(series_key, slug):
         key=lambda n: (0, 0) if n.rsplit(".", 1)[0] == "render" else (1, int(re.search(r"(\d+)", n).group(1)) if re.search(r"(\d+)", n) else 0),
     )
     save_catalog(catalog)
+    _regenerate_series(catalog, series_key)
 
     return jsonify({"ok": True, "uploaded": uploaded, "render_images": product["render_images"]})
 
@@ -451,6 +487,7 @@ def delete_image(img_type, series_key, slug, filename):
     if filename in product.get(list_key, []):
         product[list_key].remove(filename)
     save_catalog(catalog)
+    _regenerate_series(catalog, series_key)
 
     return jsonify({"ok": True})
 
