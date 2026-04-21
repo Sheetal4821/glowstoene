@@ -58,8 +58,8 @@
             "slab-3.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render.png",
+            "render.jpg",
+            "render.jpg",
             "render-1.jpg",
             "render-2.jpg"
           ],
@@ -309,8 +309,8 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render.png",
+            "render.jpg",
+            "render.jpg",
             "render-1.jpg",
             "render-2.jpg"
           ],
@@ -327,8 +327,8 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render.png",
+            "render.jpg",
+            "render.jpg",
             "render-1.jpg",
             "render-2.jpg"
           ],
@@ -345,8 +345,8 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render.png",
+            "render.jpg",
+            "render.jpg",
             "render-1.jpg",
             "render-2.jpg"
           ],
@@ -433,8 +433,8 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render.png",
+            "render.jpg",
+            "render.jpg",
             "render-1.jpg",
             "render-2.jpg"
           ],
@@ -466,8 +466,8 @@
             "slab-2.jpg"
           ],
           "render_images": [
-            "render.png",
-            "render.png",
+            "render.jpg",
+            "render.jpg",
             "render-1.jpg"
           ],
           "order": 13
@@ -645,7 +645,7 @@
             "slab.jpg"
           ],
           "render_images": [
-            "render.png",
+            "render.jpg",
             "render-1.jpg",
             "render-2.jpg",
             "render-3.jpg"

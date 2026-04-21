@@ -29,10 +29,10 @@ def render_domestic_page(catalog: dict) -> str:
 
     return template.render(
         series_list=series_list,
-        hero_image="images/collections/calacatta-series/perla-venata/render.png",
+        hero_image="images/collections/calacatta-series/perla-venata/render.jpg",
         filename="collection-domestic.html",
         meta_description="Glowstone Domestic Collection - Eternal Surfaces for India. Explore series: Onyx, Pastel, Plain, Calacatta, Budget, Carrara. Premium engineered quartz surfaces.",
         page_title="Domestic Collection | Glowstone - Eternal Surfaces India",
         og_title="Domestic Collection | Glowstone - Eternal Surfaces",
-        og_image="images/collections/calacatta-series/perla-venata/render.png",
+        og_image="images/collections/calacatta-series/perla-venata/render.jpg",
     )

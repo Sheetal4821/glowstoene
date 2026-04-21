@@ -6,7 +6,7 @@
 <body>
 {% include 'partials/navbar.html' %}
     <header class="about-hero about-hero-image" style="min-height: 50vh;">
-        <div class="about-hero-bg-image" style="background-image: url('{{ img_base }}/render.png');"></div>
+        <div class="about-hero-bg-image" style="background-image: url('{{ img_base }}/{{ product.render_images[0] if product.render_images else 'render.jpg' }}');"></div>
         <div class="about-hero-overlay"></div>
         <div class="about-hero-content">
             <nav class="about-breadcrumb"><a href="index.html">Home</a> / <a href="collection-domestic.html">Domestic Collection</a> / <a href="collection-domestic-{{ series_key }}.html">{{ series_name }}</a> / <span>{{ product.name }}</span></nav>

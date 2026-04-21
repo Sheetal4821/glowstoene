@@ -42,7 +42,7 @@ def render_product_page(series_key: str, series_name: str, product: dict) -> str
         filename=filename,
         img_base=img_base,
         carousel_id=_carousel_id(slug),
-        meta_description=f"{product['name']} - {series_name} by Glowstone. Premium engineered quartz surface.",
+        meta_description=f"{product['name']} from the {series_name} by Glowstone. Premium engineered quartz surface for kitchens, vanities, and commercial spaces — durable, low-maintenance, and elegant.",
         page_title=f"{product['name']} | {series_name} | Glowstone",
         og_title=f"{product['name']} | {series_name} | Glowstone",
         og_image=og_image,

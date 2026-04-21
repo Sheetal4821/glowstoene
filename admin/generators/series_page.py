@@ -37,7 +37,7 @@ def render_series_page(series_key: str, series: dict) -> str:
         series=series,
         sorted_products=sorted_products,
         filename=filename,
-        meta_description=f"{series['name']} - Premium quartz slabs by Glowstone. Explore our {series['name'].lower()} collection.",
+        meta_description=f"Explore the {series['name']} by Glowstone — premium engineered quartz slabs for kitchens, vanities, and countertops. Browse {len(sorted_products)} designs with slab and room renders.",
         page_title=f"{series['name']} | Glowstone - Domestic Collection",
         og_title=f"{series['name']} | Glowstone - Domestic Collection",
         og_image=og_image,
