@@ -20,9 +20,9 @@ npm-debug.log*
 # Large video files (exceeds GitHub 100MB limit - host separately)
 video/
 
-# Local S3 deploy bundle (large; regenerate with your sync script)
+# Local S3 deploy bundle (large; regenerate with build_s3.py)
 s3-upload/
+s3-upload.zip
 __pycache__/
 admin/data/password_hash.txt
-files/files/Glowstone Industries Tour Short.mp4
 files/files/Glowstone Industries Tour Short.mp4
