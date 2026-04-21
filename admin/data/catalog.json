@@ -33,7 +33,9 @@
           "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
           "slab_images": [
             "slab.jpg",
-            "slab-2.jpg"
+            "slab-2.jpg",
+            "slab-3.jpg",
+            "slab-4.jpg"
           ],
           "render_images": [
             "render.jpg",
@@ -69,7 +71,8 @@
           "size": "Jumbo 323 × 163 cm · Super Jumbo 350 × 200 cm (nominal slab formats).",
           "slab_images": [
             "slab.jpg",
-            "slab-2.jpg"
+            "slab-2.jpg",
+            "slab-3.jpg"
           ],
           "render_images": [
             "render.jpg",
