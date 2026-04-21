@@ -107,7 +107,6 @@
 }
 
 .care-eyebrow {
-    font-family: var(--font-sans);
     font-size: 0.78rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
@@ -137,7 +136,6 @@
 .care-panel .care-panel-title,
 .care-panel h1,
 .care-panel h2 {
-    font-family: var(--font-sans);
     font-size: clamp(2.65rem, 6.9vw, 6.35rem);
     font-weight: 300;
     line-height: 1.07;
@@ -162,7 +160,6 @@
 }
 
 .care-desc {
-    font-family: var(--font-sans);
     font-size: clamp(1rem, 1.45vw, 1.18rem);
     font-weight: 300;
     color: var(--care-hero-copy);
@@ -177,7 +174,6 @@
 }
 
 .care-link {
-    font-family: var(--font-sans);
     font-size: 0.76rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -229,7 +225,6 @@
 }
 
 #care-hint span {
-    font-family: var(--font-sans);
     font-size: var(--text-micro);
     letter-spacing: 0.24em;
     text-transform: uppercase;
@@ -479,7 +474,6 @@
 }
 
 .care-hero-content h1 {
-    font-family: var(--font-sans);
     font-size: clamp(2.35rem, 5.2vw, 3.65rem);
     font-weight: 600;
     color: var(--care-hero-head);
@@ -548,7 +542,6 @@
 
 .care-dos-col h3,
 .care-donts-col h3 {
-    font-family: var(--font-sans);
     font-size: 1.35rem;
     font-weight: 600;
     color: #e8e4df;
@@ -661,7 +654,6 @@
 .care-bento-collection-link {
     pointer-events: auto;
     margin-top: 0.5rem;
-    font-family: var(--font-sans);
     font-size: 0.72rem;
     font-weight: 500;
     letter-spacing: 0.12em;
@@ -685,7 +677,6 @@
 }
 
 .care-bento-label {
-    font-family: var(--font-sans);
     font-size: 1.35rem;
     font-weight: 600;
     color: var(--care-cream);
@@ -694,7 +685,6 @@
 }
 
 .care-bento-desc {
-    font-family: var(--font-sans);
     font-size: 0.78rem;
     font-weight: 200;
     color: rgba(245, 240, 234, 0.7);
@@ -948,7 +938,6 @@
     transform: translateX(-50%);
     color: rgba(235, 228, 216, 0.88);
     font-size: 0.95rem;
-    font-family: var(--font-sans);
 }
 
 @media (max-width: 768px) {
@@ -1016,7 +1005,6 @@
 }
 
 .care-section-heading {
-    font-family: var(--font-sans);
     font-size: clamp(1.75rem, 3.5vw, 2.25rem);
     font-weight: 600;
     color: #e8e4df;
@@ -1064,7 +1052,6 @@
 }
 
 .care-tip-card h3 {
-    font-family: var(--font-sans);
     font-size: 1.15rem;
     font-weight: 600;
     color: #e8e4df;
@@ -1107,7 +1094,6 @@
     background: transparent;
     border: none;
     color: #e8e4df;
-    font-family: var(--font-sans);
     font-size: 1.25rem;
     font-weight: 600;
     text-align: left;
@@ -1176,7 +1162,6 @@
 }
 
 .care-faq-item dt {
-    font-family: var(--font-sans);
     font-size: 1.2rem;
     font-weight: 600;
     color: #e8e4df;
@@ -1207,7 +1192,6 @@
 }
 
 .care-warranty-content h2 {
-    font-family: var(--font-sans);
     font-size: clamp(1.75rem, 3.5vw, 2.25rem);
     font-weight: 600;
     color: #e8e4df;

@@ -61,7 +61,6 @@
 }
 
 .contact-hero-content h1 {
-    font-family: var(--font-sans);
     font-size: clamp(2.15rem, 4.75vw, 3.2rem);
     font-weight: 600;
     color: var(--text-light);
@@ -96,7 +95,6 @@
 }
 
 .contact-form-title {
-    font-family: var(--font-sans);
     font-size: 1.75rem;
     font-weight: 600;
     color: #e8e4df;
@@ -254,7 +252,6 @@
 }
 
 .contact-info-card h4 {
-    font-family: var(--font-sans);
     font-size: 1.1rem;
     font-weight: 600;
     color: #e8e4df;

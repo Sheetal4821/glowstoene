@@ -93,7 +93,6 @@
 }
 
 .sus-stat-card h3 {
-    font-family: var(--font-sans);
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--sus-cream);
@@ -101,7 +100,6 @@
 }
 
 .sus-stat-card p {
-    font-family: var(--font-sans);
     font-size: 0.8rem;
     font-weight: 200;
     color: rgba(245, 240, 234, 0.6);
@@ -118,7 +116,6 @@
 }
 
 .sus-sec-label {
-    font-family: var(--font-sans);
     font-size: 0.72rem;
     letter-spacing: 0.28em;
     text-transform: uppercase;
@@ -128,7 +125,6 @@
 }
 
 .sus-sec-title {
-    font-family: var(--font-sans);
     font-size: clamp(2.15rem, 3.75vw, 3.2rem);
     font-weight: 300;
     color: var(--sus-cream);

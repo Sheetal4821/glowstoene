@@ -62,7 +62,6 @@
     transform: translateY(-50%);
     background: rgba(13, 12, 11, 0.92);
     color: var(--inst-cream);
-    font-family: var(--font-sans);
     font-size: var(--text-small);
     letter-spacing: 0.08em;
     padding: 3px 8px;
@@ -96,7 +95,6 @@
 }
 
 .inst-header .bc {
-    font-family: var(--font-sans);
     font-size: 0.72rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -114,7 +112,6 @@
 }
 
 .inst-header h1 {
-    font-family: var(--font-sans);
     font-size: clamp(2.95rem, 6.25vw, 5.35rem);
     font-weight: 300;
     color: var(--inst-cream);
@@ -128,7 +125,6 @@
 }
 
 .inst-header p {
-    font-family: var(--font-sans);
     font-size: clamp(0.9rem, 1.2vw, 1.02rem);
     font-weight: 300;
     color: rgba(245, 240, 234, 0.4);
@@ -195,7 +191,6 @@
 .inst-ghost {
     position: absolute;
     z-index: 3;
-    font-family: var(--font-sans);
     font-size: clamp(7rem, 13vw, 16rem);
     font-weight: 300;
     line-height: 1;
@@ -269,7 +264,6 @@
 }
 
 #inst-hint span {
-    font-family: var(--font-sans);
     font-size: var(--text-micro);
     letter-spacing: 0.25em;
     text-transform: uppercase;
@@ -302,7 +296,6 @@
 
 /* Typography */
 .inst-eyebrow {
-    font-family: var(--font-sans);
     font-size: 0.72rem;
     letter-spacing: 0.32em;
     text-transform: uppercase;
@@ -326,7 +319,6 @@
 }
 
 .inst-panel h2 {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 3vw, 3.8rem);
     font-weight: 300;
     line-height: 1.07;
@@ -346,7 +338,6 @@
 }
 
 .inst-desc {
-    font-family: var(--font-sans);
     font-size: clamp(0.875rem, 1.05vw, 0.98rem);
     font-weight: 300;
     color: rgba(245, 240, 234, 0.65);
@@ -364,7 +355,6 @@
 }
 
 .inst-list li {
-    font-family: var(--font-sans);
     font-size: var(--text-small);
     font-weight: 300;
     color: rgba(245, 240, 234, 0.52);
@@ -399,7 +389,6 @@
 
 /* Link */
 .inst-link {
-    font-family: var(--font-sans);
     font-size: 0.74rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;

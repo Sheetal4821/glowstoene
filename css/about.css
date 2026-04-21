@@ -74,7 +74,6 @@
 }
 
 .about-hero-content h1:not(.visually-hidden) {
-    font-family: var(--font-sans);
     font-size: clamp(2.65rem, 6.2vw, 4.75rem);
     font-weight: 600;
     color: var(--text-light);
@@ -99,7 +98,6 @@
 }
 
 .about-hero-subtitle {
-    font-family: var(--font-sans);
     font-size: clamp(1rem, 2.2vw, 1.35rem);
     font-weight: 500;
     color: rgba(235, 228, 216, 0.95);
@@ -189,7 +187,6 @@
 }
 
 .about-heading {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 600;
     color: var(--text-light);
@@ -309,7 +306,6 @@
 }
 
 .about-banner-content h2 {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 600;
     color: var(--text-light);
@@ -444,7 +440,6 @@
 }
 
 .benefit-card h3 {
-    font-family: var(--font-sans);
     font-size: 1.35rem;
     font-weight: 600;
     color: var(--text-light);
@@ -543,7 +538,6 @@
 }
 
 .timeline-year {
-    font-family: var(--font-sans);
     font-size: 2rem;
     font-weight: 600;
     color: var(--navbar-accent);
@@ -551,7 +545,6 @@
 }
 
 .timeline-content h3 {
-    font-family: var(--font-sans);
     font-size: 1.35rem;
     font-weight: 600;
     color: var(--text-light);
@@ -625,7 +618,6 @@
 
 .value-number {
     display: block;
-    font-family: var(--font-sans);
     font-size: 3rem;
     font-weight: 600;
     color: var(--navbar-accent);
@@ -634,7 +626,6 @@
 }
 
 .value-card h3 {
-    font-family: var(--font-sans);
     font-size: 1.35rem;
     font-weight: 600;
     color: var(--text-light);
@@ -660,7 +651,6 @@
 }
 
 .about-cta-content h2 {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 600;
     color: var(--text-light);
@@ -1004,7 +994,6 @@
 }
 
 .about-subheading {
-    font-family: var(--font-sans);
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--navbar-accent);
@@ -1075,7 +1064,6 @@
 }
 
 .gr-subtitle {
-    font-family: var(--font-sans);
     font-size: 0.88rem;
     color: rgba(26, 25, 24, 0.72);
     margin-top: 0.3rem;
@@ -1202,7 +1190,6 @@
     position: absolute;
     background: #0d0c0b;
     color: #f5f0ea;
-    font-family: var(--font-sans);
     font-size: var(--text-caption);
     letter-spacing: 0.08em;
     padding: 4px 10px;
@@ -1243,7 +1230,6 @@
 }
 
 .gr-tag {
-    font-family: var(--font-sans);
     font-size: 0.75rem;
     font-weight: 300;
     letter-spacing: 0.05em;

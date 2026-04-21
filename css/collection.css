@@ -46,7 +46,6 @@
 }
 
 .collection-brochure-cta-title {
-    font-family: var(--font-sans);
     font-size: 1.35rem;
     font-weight: 600;
     color: var(--navbar-accent);
@@ -118,7 +117,6 @@
 }
 
 .collection-hero h1 {
-    font-family: var(--font-sans);
     font-size: clamp(2.65rem, 5.25vw, 3.75rem);
     font-weight: 600;
     color: var(--text-light);
@@ -182,7 +180,6 @@
 }
 
 .series-card-title {
-    font-family: var(--font-sans);
     font-size: 1.75rem;
     font-weight: 600;
     color: var(--text-light);
@@ -212,7 +209,6 @@
 }
 
 .series-card-placeholder span {
-    font-family: var(--font-sans);
     font-size: 1.5rem;
     color: rgba(201, 169, 98, 0.5);
 }
@@ -234,7 +230,6 @@
 
 .series-page-header h1,
 .series-page-header h2 {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 600;
     color: var(--text-light);
@@ -294,7 +289,6 @@
 }
 
 .product-card-title {
-    font-family: var(--font-sans);
     font-size: 1.25rem;
     font-weight: 600;
     color: #e8e4df;
@@ -348,7 +342,6 @@
 
 .product-page-header h1,
 .product-page-header h2 {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 600;
     color: var(--text-light);
@@ -493,7 +486,6 @@
 }
 
 .product-content h2 {
-    font-family: var(--font-sans);
     font-size: 1.5rem;
     font-weight: 600;
     color: #e8e4df;
@@ -532,7 +524,6 @@
 }
 
 .product-fact dt {
-    font-family: var(--font-sans);
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -557,7 +548,6 @@
 }
 
 .product-renders-heading {
-    font-family: var(--font-sans);
     font-size: 1.35rem;
     font-weight: 600;
     color: #e8e4df;

@@ -92,7 +92,6 @@
 }
 
 .tech-hero-content h1 {
-    font-family: var(--font-sans);
     font-size: clamp(2.15rem, 4.75vw, 3.2rem);
     font-weight: 600;
     color: var(--text-light);
@@ -125,7 +124,6 @@
 }
 
 .tech-section-heading {
-    font-family: var(--font-sans);
     font-size: clamp(1.6rem, 3vw, 2rem);
     font-weight: 600;
     color: #e8e4df;
@@ -155,7 +153,6 @@
 
 .tech-table th {
     padding: 1rem 1.25rem;
-    font-family: var(--font-sans);
     font-size: 1.1rem;
     font-weight: 600;
     color: #e8e4df;
@@ -273,7 +270,6 @@
 }
 
 .tech-cta-content h2 {
-    font-family: var(--font-sans);
     font-size: clamp(1.6rem, 3vw, 2rem);
     font-weight: 600;
     color: #e8e4df;

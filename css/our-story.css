@@ -35,7 +35,6 @@
 }
 
 .sh .bc {
-    font-family: var(--font-sans);
     font-size: 0.72rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -55,7 +54,6 @@
 }
 
 .sh h1 {
-    font-family: var(--font-sans);
     font-size: clamp(2.95rem, 6.25vw, 5.75rem);
     font-weight: 300;
     color: var(--os-cream);
@@ -71,7 +69,6 @@
 }
 
 .sh p {
-    font-family: var(--font-sans);
     font-size: clamp(0.9rem, 1.2vw, 1.02rem);
     font-weight: 300;
     color: rgba(245, 240, 234, 0.4);
@@ -198,7 +195,6 @@
 }
 
 .r-year {
-    font-family: var(--font-sans);
     font-size: 0.72rem;
     letter-spacing: 0.28em;
     text-transform: uppercase;
@@ -208,7 +204,6 @@
 }
 
 .r-card-inner h3 {
-    font-family: var(--font-sans);
     font-size: clamp(1.2rem, 1.8vw, 1.65rem);
     font-weight: 300;
     color: var(--os-cream);
@@ -222,7 +217,6 @@
 }
 
 .r-card-inner p {
-    font-family: var(--font-sans);
     font-size: clamp(0.8125rem, 0.95vw, 0.92rem);
     font-weight: 300;
     color: rgba(245, 240, 234, 0.55);
@@ -237,7 +231,6 @@
     background: rgba(58, 170, 140, 0.1);
     border: 1px solid rgba(58, 170, 140, 0.3);
     padding: 0.18rem 0.6rem;
-    font-family: var(--font-sans);
     font-size: var(--text-micro);
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -253,7 +246,6 @@
 }
 
 .sc .lbl {
-    font-family: var(--font-sans);
     font-size: 0.72rem;
     letter-spacing: 0.28em;
     text-transform: uppercase;
@@ -264,7 +256,6 @@
 }
 
 .sc h2 {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 3.5vw, 3rem);
     font-weight: 300;
     color: var(--os-cream);

@@ -60,7 +60,6 @@
 }
 
 .faq-hero-content h1 {
-    font-family: var(--font-sans);
     font-size: clamp(2.15rem, 4.75vw, 3.2rem);
     font-weight: 600;
     color: var(--text-light);
@@ -111,7 +110,6 @@
     background: transparent;
     border: none;
     color: #e8e4df;
-    font-family: var(--font-sans);
     font-size: clamp(1.1rem, 2vw, 1.25rem);
     font-weight: 600;
     text-align: left;

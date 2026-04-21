@@ -70,10 +70,6 @@ body {
     overflow-x: clip;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-sans);
-}
-
 #home.hero {
     padding-top: 0;
     margin-top: 0;
@@ -513,7 +509,6 @@ html {
 }
 
 .hero h1 {
-    font-family: var(--font-sans);
     font-size: clamp(2.4rem, 5.8vw, 4.25rem);
     font-weight: 600;
     color: var(--text-light);
@@ -523,7 +518,6 @@ html {
 }
 
 .hero-subtitle {
-    font-family: var(--font-sans);
     font-size: clamp(1.05rem, 2.35vw, 1.42rem);
     font-weight: 500;
     color: rgba(235, 228, 216, 0.95);
@@ -577,7 +571,6 @@ html {
 }
 
 .feature-title {
-    font-family: var(--font-sans);
     font-size: clamp(1.75rem, 2.5vw, 2.25rem);
     font-weight: 600;
     color: var(--text-light);
@@ -629,7 +622,6 @@ html {
 
 .stat-number {
     display: block;
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 600;
     color: var(--navbar-accent);
@@ -670,7 +662,6 @@ html {
 }
 
 .section-heading {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 600;
     color: var(--text-light);
@@ -804,7 +795,6 @@ html {
 }
 
 .collection-heading {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4.5vw, 3rem);
     font-weight: 600;
     color: var(--text-light);
@@ -892,7 +882,6 @@ html {
 }
 
 .our-story-heading {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 600;
     color: var(--text-light);
@@ -964,7 +953,6 @@ html {
 }
 
 .vision-heading {
-    font-family: var(--font-sans);
     font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 600;
     color: var(--text-light);
@@ -1110,7 +1098,6 @@ html {
 .app-label {
     position: relative;
     z-index: 2;
-    font-family: var(--font-sans);
     font-size: clamp(1.25rem, 1.5vw, 1.5rem);
     font-weight: 600;
     color: var(--text-light);
@@ -1222,7 +1209,6 @@ html {
 }
 
 .brochure-heading {
-    font-family: var(--font-sans);
     font-size: clamp(1.75rem, 3vw, 2.5rem);
     font-weight: 600;
     color: var(--text-light);
@@ -1297,7 +1283,6 @@ html {
 }
 
 .contact-heading {
-    font-family: var(--font-sans);
     font-size: clamp(1.75rem, 3vw, 2.5rem);
     font-weight: 600;
     color: var(--text-light);
@@ -1632,7 +1617,6 @@ html {
 }
 
 .footer-tagline {
-    font-family: var(--font-sans);
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--navbar-accent);
