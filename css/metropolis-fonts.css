@@ -1,19 +1,8 @@
 /**
- * Glowstone Typography
- *
- * Source Serif 4 — headings (matches Caesarstone's Publico Banner)
- * Source Sans 3 — body text (matches Caesarstone's Frutiger)
- *
- * Fonts loaded via <link> tag in HTML head.
+ * Glowstone Typography — Source Sans 3 everywhere.
+ * Loaded via <link> tag in HTML head.
  */
 
-/* Single clean rule: everything inherits from body */
-html, body {
+html {
     font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-}
-
-/* Headings get serif font */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Source Serif 4', 'Georgia', serif !important;
 }

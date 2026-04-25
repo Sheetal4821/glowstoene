@@ -143,7 +143,6 @@
     border: 1px solid rgba(201, 169, 98, 0.3);
     color: var(--text-light);
     font-size: 1rem;
-    font-family: inherit;
     color-scheme: dark;
     border-radius: 6px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
