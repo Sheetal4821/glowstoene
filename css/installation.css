@@ -18,14 +18,7 @@
 
 /* Progress bar */
 #inst-progress {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 0%;
-    background: linear-gradient(90deg, var(--inst-green), var(--inst-gold));
-    z-index: 9999;
-    pointer-events: none;
+    display: none;
 }
 
 /* Right dot nav */
@@ -85,13 +78,7 @@
 }
 
 .inst-header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.2), transparent);
+    display: none;
 }
 
 .inst-header .bc {
