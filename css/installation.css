@@ -204,20 +204,12 @@
 }
 
 .inst-content::before {
-    content: '';
-    position: absolute;
-    top: 8%;
-    bottom: 8%;
-    width: 1px;
-    z-index: 1;
-    background: linear-gradient(to bottom, transparent, rgba(201, 168, 76, 0.18), transparent);
+    display: none;
 }
 
 .inst-step.odd .inst-content::before,
 .inst-step.even .inst-content::before {
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
+    display: none;
 }
 
 /* Text panel — centered on all steps */
