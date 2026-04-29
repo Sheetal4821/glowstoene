@@ -444,7 +444,9 @@
           var fo = 1 - ease(norm(p, r[2], r[3]));
           var op = Math.min(fi, fo);
           panels[i].style.opacity   = op;
-          panels[i].style.transform = 'translateY('+((1-op)*18)+'px)';
+          /* Integer px prevents subpixel blur on transformed text layers */
+          var ty = Math.round((1-op)*18);
+          panels[i].style.transform = 'translate3d(0,'+ty+'px,0)';
         }
 
         hint.style.opacity = p < 0.02 ? '1' : '0';

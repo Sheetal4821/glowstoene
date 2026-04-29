@@ -205,6 +205,7 @@
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 .inst-content::before {
     display: none;
 }
@@ -214,6 +215,8 @@
     display: none;
 }
 
+=======
+>>>>>>> de9f849 (Describe your changes in one short sentence)
 /* Text panel — centered on all steps */
 .inst-panel {
     position: absolute;
@@ -462,9 +465,6 @@
     }
     .inst-content {
         min-height: auto;
-    }
-    .inst-content::before {
-        display: none;
     }
     .inst-panel {
         position: relative;

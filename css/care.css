@@ -63,10 +63,11 @@
     z-index: 2;
     pointer-events: none;
     background: linear-gradient(to bottom,
-        rgba(0, 0, 0, 0.42) 0%,
-        transparent 28%,
-        transparent 68%,
-        rgba(0, 0, 0, 0.52) 100%);
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.18) 22%,
+        rgba(0, 0, 0, 0.14) 50%,
+        rgba(0, 0, 0, 0.2) 78%,
+        rgba(0, 0, 0, 0.55) 100%);
 }
 
 .care-panel {
@@ -78,6 +79,8 @@
     opacity: 0;
     pointer-events: none;
     will-change: opacity, transform;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 #care-p0 {
@@ -116,7 +119,7 @@
     display: flex;
     align-items: center;
     gap: 0.7rem;
-    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.75), 0 0 1px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .care-eyebrow::before,
@@ -141,7 +144,7 @@
     line-height: 1.07;
     color: var(--care-hero-head);
     margin-bottom: 1.2rem;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .care-panel-title em,
@@ -149,14 +152,14 @@
     font-style: italic;
     color: var(--care-gold);
     font-weight: 300;
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.95);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85), 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .care-panel-title strong,
 .care-panel h2 strong {
     font-weight: 600;
     color: var(--care-green);
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.95);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85), 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .care-desc {
@@ -166,7 +169,7 @@
     max-width: 460px;
     line-height: 1.8;
     margin-bottom: 2rem;
-    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.8), 0 0 1px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 #care-p2 .care-desc {
@@ -183,7 +186,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.9rem;
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
 }
 
 .care-link-bar {
@@ -228,8 +231,8 @@
     font-size: var(--text-micro);
     letter-spacing: 0.24em;
     text-transform: uppercase;
-    color: rgba(207, 196, 182, 0.85);
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+    color: rgba(207, 196, 182, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .c-mouse {

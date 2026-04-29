@@ -447,6 +447,15 @@
     min-height: 0;
 }
 
+/* Prevent temporary stacked slab images before carousel JS/CSS settles */
+.product-slab-image .carousel .carousel-item {
+    display: none;
+}
+
+.product-slab-image .carousel .carousel-item.active {
+    display: block;
+}
+
 .product-slab-image .carousel-item img {
     width: 100%;
     max-width: 100%;
