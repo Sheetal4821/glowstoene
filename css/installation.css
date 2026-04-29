@@ -289,12 +289,7 @@
 
 .inst-eyebrow::before,
 .inst-eyebrow::after {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 1px;
-    background: var(--inst-gold);
-    opacity: 0.5;
+    display: none;
 }
 
 .inst-panel h2 {
@@ -352,13 +347,7 @@
 }
 
 .inst-list li::before {
-    content: '';
-    display: block;
-    width: 14px;
-    height: 1px;
-    background: var(--inst-gold);
-    flex-shrink: 0;
-    margin-top: 0.55rem;
+    display: none;
 }
 
 .inst-list li strong {
