@@ -202,19 +202,6 @@
     background: var(--inst-black);
     overflow: hidden;
 }
-
-<<<<<<< HEAD
-.inst-content::before {
-    display: none;
-}
-
-.inst-step.odd .inst-content::before,
-.inst-step.even .inst-content::before {
-    display: none;
-}
-
-=======
->>>>>>> de9f849 (Describe your changes in one short sentence)
 /* Text panel — centered on all steps */
 .inst-panel {
     position: absolute;
@@ -229,6 +216,12 @@
     opacity: 0;
     pointer-events: none;
     will-change: opacity, transform;
+}
+
+.inst-panel > * {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /* Scroll hint */
