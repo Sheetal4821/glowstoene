@@ -18,7 +18,9 @@
 
 /* Progress bar */
 #inst-progress {
-    display: none;
+    display: none !important;
+    height: 0 !important;
+    opacity: 0 !important;
 }
 
 /* Right dot nav */
