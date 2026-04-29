@@ -18,9 +18,7 @@
 
 /* Progress bar */
 #inst-progress {
-    display: none !important;
-    height: 0 !important;
-    opacity: 0 !important;
+    display: none;
 }
 
 /* Right dot nav */
@@ -294,7 +292,12 @@
 
 .inst-eyebrow::before,
 .inst-eyebrow::after {
-    display: none;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--inst-gold);
+    opacity: 0.5;
 }
 
 .inst-panel h2 {
@@ -352,7 +355,13 @@
 }
 
 .inst-list li::before {
-    display: none;
+    content: '';
+    display: block;
+    width: 14px;
+    height: 1px;
+    background: var(--inst-gold);
+    flex-shrink: 0;
+    margin-top: 0.55rem;
 }
 
 .inst-list li strong {
